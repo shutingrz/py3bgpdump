@@ -3,7 +3,7 @@
 import gzip, bz2
 import dpkt
 
-BZ2_MAGIC = '\x42\x5a\x68'
+BZ2_MAGIC = b'\x42\x5a\x68'
 GZIP_MAGIC = dpkt.gzip.GZIP_MAGIC
 MRT_HEADER_LEN = dpkt.mrt.MRTHeader.__hdr_len__
 SUPPORTED_AFIS = ( dpkt.mrt.AFI_IPv4, )
